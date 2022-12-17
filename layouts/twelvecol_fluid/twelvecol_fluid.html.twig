@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display 6col 6col layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout wrapper.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set custom_classes = settings.label|split(" ") %}
+
+{%
+  set classes = [
+    'layout',
+    'layout--twelvecol-fluid',
+    'container-fluid',
+    'p-0',
+  ]|merge(custom_classes)
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="row">
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+

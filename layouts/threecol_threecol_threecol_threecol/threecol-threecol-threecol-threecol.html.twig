@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display 6col 6col layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout wrapper.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set custom_classes = settings.label|split(" ") %}
+
+{%
+  set classes = [
+    'layout',
+    'layout--threecol-threecol-threecol-threecol',
+    'container-fluid',
+  ]|merge(custom_classes)
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="container">
+      <div class="row">
+        {% if content.first %}
+          <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-6', 'col-md-3') }}>
+            {{ content.first }}
+          </div>
+        {% endif %}
+
+        {% if content.second %}
+          <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-6',  'col-md-3') }}>
+            {{ content.second }}
+          </div>
+        {% endif %}
+
+        {% if content.third %}
+          <div {{ region_attributes.third.addClass('layout__region', 'layout__region--third', 'col-6', 'col-md-3') }}>
+            {{ content.third }}
+          </div>
+
+        {% endif %}
+        {% if content.fourth %}
+          <div {{ region_attributes.fourth.addClass('layout__region', 'layout__region--fourth', 'col-6', 'col-md-3') }}>
+            {{ content.fourth }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+

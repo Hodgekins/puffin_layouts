@@ -1,0 +1,5 @@
+name: Puffin Layouts
+type: module
+description: Layouts for puffin theme
+package: Custom
+core_version_requirement: ^9 || ^10

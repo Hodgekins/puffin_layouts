@@ -1,0 +1,120 @@
+puffin_layouts_twelvecol_fluid:
+  label: '12col fluid'
+  category: 'Puffin'
+  path: layouts/twelvecol_fluid
+  template: twelvecol_fluid
+  regions:
+    first:
+      label: First
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b]
+    - [c]
+
+puffin_layouts_twelvecol:
+  label: '12col'
+  category: 'Puffin'
+  path: layouts/twelvecol
+  template: twelvecol
+  regions:
+    first:
+      label: First
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b]
+    - [c]
+
+puffin_layouts_sixcol_sixcol:
+  label: '6col 6col'
+  category: 'Puffin'
+  path: layouts/sixcol_sixcol
+  template: sixcol-sixcol
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b, c]
+    - [d, e]
+
+puffin_layouts_eightcol_fourcol:
+  label: '8col 4col'
+  category: 'Puffin'
+  path: layouts/eightcol_fourcol
+  template: eightcol-fourcol
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b, b, c]
+    - [d, d, e]
+
+puffin_layouts_fourcol_eightcol:
+  label: '4col 8col'
+  category: 'Puffin'
+  path: layouts/fourcol_eightcol
+  template: fourcol-eightcol
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b, c, c]
+    - [d, e, e]
+
+puffin_layouts_fourcol_fourcol_fourcol:
+  label: '4col 4col 4col'
+  category: 'Puffin'
+  path: layouts/fourcol_fourcol_fourcol
+  template: fourcol-fourcol-fourcol
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b, c, d]
+    - [e, f, g]
+
+puffin_layouts_threecol_threecol_threecol_threecol:
+  label: '3col 3col 3col 3col'
+  category: 'Puffin'
+  path: layouts/threecol_threecol_threecol_threecol
+  template: threecol-threecol-threecol-threecol
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a, b]
+    - [c, d]
+    - [e, f, g, h]
