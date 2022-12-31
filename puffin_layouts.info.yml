@@ -8,3 +8,4 @@ dependencies:
   - paragraphs
   - layout_paragraphs
   - puffin_media
+  - media_library_edit
