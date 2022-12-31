@@ -1,0 +1,36 @@
+uuid: d2841390-f654-4755-9ecf-ee380474a47a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_16x9_8col.field_classes
+    - field.field.paragraph.image_16x9_8col.field_image
+    - paragraphs.paragraphs_type.image_16x9_8col
+  module:
+    - media_library
+    - media_library_edit
+id: paragraph.image_16x9_8col.default
+targetEntityType: paragraph
+bundle: image_16x9_8col
+mode: default
+content:
+  field_classes:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+hidden:
+  created: true
+  status: true

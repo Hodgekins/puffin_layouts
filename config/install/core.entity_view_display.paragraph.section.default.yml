@@ -1,0 +1,12 @@
+uuid: 2843949f-bc04-4bcf-b313-2762be325f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content: {  }
+hidden: {  }

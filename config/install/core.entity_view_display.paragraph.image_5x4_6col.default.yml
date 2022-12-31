@@ -1,0 +1,24 @@
+uuid: 8a4c856a-23b7-48b7-b9e2-e3f2421a3095
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_5x4_6col.field_classes
+    - field.field.paragraph.image_5x4_6col.field_image
+    - paragraphs.paragraphs_type.image_5x4_6col
+id: paragraph.image_5x4_6col.default
+targetEntityType: paragraph
+bundle: image_5x4_6col
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 5x4_6col
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_classes: true
