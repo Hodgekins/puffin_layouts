@@ -28,5 +28,5 @@ function puffin_layouts_theme_registry_alter(&$theme_registry) {
  * Implements hook_preprocess_page()
  */
 function puffin_layouts_preprocess_page(&$variables) {
-  $variables['#attached']['library'][] = 'puffin/bootstrap';
+  $variables['#attached']['library'][] = 'puffin/global-styling';
 }
