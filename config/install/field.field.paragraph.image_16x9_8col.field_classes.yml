@@ -1,0 +1,19 @@
+uuid: d0a16a22-738f-4931-a0c9-b5789b0f8845
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_classes
+    - paragraphs.paragraphs_type.image_16x9_8col
+id: paragraph.image_16x9_8col.field_classes
+field_name: field_classes
+entity_type: paragraph
+bundle: image_16x9_8col
+label: Classes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

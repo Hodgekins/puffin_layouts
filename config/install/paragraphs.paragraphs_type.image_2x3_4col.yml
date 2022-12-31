@@ -1,0 +1,10 @@
+uuid: 133df83d-d548-4581-a0dd-54d71fb4dfef
+langcode: en
+status: true
+dependencies: {  }
+id: image_2x3_4col
+label: 'Image 2x3 4col'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

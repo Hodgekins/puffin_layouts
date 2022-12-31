@@ -3,3 +3,8 @@ type: module
 description: Layouts for puffin theme
 package: Custom
 core_version_requirement: ^9 || ^10
+dependencies:
+  - crop
+  - paragraphs
+  - layout_paragraphs
+  - puffin_media

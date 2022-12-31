@@ -1,0 +1,10 @@
+uuid: 0575d30a-60e0-4467-85c2-dc49cc3b7ce1
+langcode: en
+status: true
+dependencies: {  }
+id: image_16x9_8col
+label: 'Image 16x9 8col'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

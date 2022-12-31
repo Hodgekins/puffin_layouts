@@ -1,0 +1,10 @@
+uuid: 615bb6d6-6fb0-4c3b-b943-840f5e1db859
+langcode: en
+status: true
+dependencies: {  }
+id: image_5x4_4col
+label: 'Image 5x4 4col'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

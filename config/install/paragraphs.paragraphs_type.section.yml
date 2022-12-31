@@ -1,0 +1,22 @@
+uuid: 7ca6fd01-21bc-4792-9462-107b1ba2c419
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      puffin_layouts_twelvecol_fluid: '12col fluid'
+      puffin_layouts_twelvecol: 12col
+      puffin_layouts_sixcol_sixcol: '6col 6col'
+      puffin_layouts_eightcol_fourcol: '8col 4col'
+      puffin_layouts_fourcol_eightcol: '4col 8col'
+      puffin_layouts_fourcol_fourcol_fourcol: '4col 4col 4col'
+      puffin_layouts_threecol_threecol_threecol_threecol: '3col 3col 3col 3col'

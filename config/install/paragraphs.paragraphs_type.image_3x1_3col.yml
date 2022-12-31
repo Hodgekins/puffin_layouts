@@ -1,0 +1,10 @@
+uuid: 2ff06ebe-119f-487a-b959-d935c1007f91
+langcode: en
+status: true
+dependencies: {  }
+id: image_3x1_3col
+label: 'Image 3x1 3col'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
