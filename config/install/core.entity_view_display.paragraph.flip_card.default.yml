@@ -1,0 +1,30 @@
+uuid: 6a547446-9261-4d33-8bd3-2411ae06a4ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flip_card.field_flip_card_back
+    - field.field.paragraph.flip_card.field_flip_card_front
+    - paragraphs.paragraphs_type.flip_card
+  module:
+    - text
+id: paragraph.flip_card.default
+targetEntityType: paragraph
+bundle: flip_card
+mode: default
+content:
+  field_flip_card_back:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_flip_card_front:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

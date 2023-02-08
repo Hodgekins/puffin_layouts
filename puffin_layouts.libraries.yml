@@ -1,0 +1,6 @@
+# Custom module library for general purposes.
+flip-card:
+  css:
+    component:
+      css/flip-card.css: {}
+
