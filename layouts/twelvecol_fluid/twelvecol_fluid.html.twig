@@ -11,15 +11,12 @@
  */
 #}
 
-{% set custom_classes = settings.label|split(" ") %}
-
 {%
   set classes = [
     'layout',
     'layout--twelvecol-fluid',
     'container-fluid',
-    'p-0',
-  ]|merge(custom_classes)
+  ]
 %}
 
 {% if content %}

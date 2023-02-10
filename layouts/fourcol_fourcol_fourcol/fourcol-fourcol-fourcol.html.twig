@@ -11,38 +11,34 @@
  */
 #}
 
-{% set custom_classes = settings.label|split(" ") %}
-
 {%
   set classes = [
     'layout',
     'layout--fourcol-fourcol-fourcol',
-    'container-fluid',
-  ]|merge(custom_classes)
+    'container',
+  ]
 %}
 
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="container">
-      <div class="row">
-        {% if content.first %}
-          <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-md-4') }}>
-            {{ content.first }}
-          </div>
-        {% endif %}
+    <div class="row">
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-md-4') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
 
-        {% if content.second %}
-          <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-md-4') }}>
-            {{ content.second }}
-          </div>
-        {% endif %}
+      {% if content.second %}
+        <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-md-4') }}>
+          {{ content.second }}
+        </div>
+      {% endif %}
 
-        {% if content.third %}
-          <div {{ region_attributes.third.addClass('layout__region', 'layout__region--second', 'col-md-4') }}>
-            {{ content.third }}
-          </div>
-        {% endif %}
-      </div>
+      {% if content.third %}
+        <div {{ region_attributes.third.addClass('layout__region', 'layout__region--second', 'col-md-4') }}>
+          {{ content.third }}
+        </div>
+      {% endif %}
     </div>
   </div>
 {% endif %}

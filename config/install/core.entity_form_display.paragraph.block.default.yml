@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.block.field_block
+    - field.field.paragraph.block.field_classes
     - paragraphs.paragraphs_type.block
 id: paragraph.block.default
 targetEntityType: paragraph
@@ -15,6 +16,14 @@ content:
     weight: 0
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_classes:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

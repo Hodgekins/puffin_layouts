@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.section.field_classes
     - paragraphs.paragraphs_type.section
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
 mode: default
 content: {  }
-hidden: {  }
+hidden:
+  field_classes: true

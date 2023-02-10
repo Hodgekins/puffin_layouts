@@ -3,12 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.section.field_classes
     - paragraphs.paragraphs_type.section
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
 mode: default
 content:
+  field_classes:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   layout_paragraphs_fields:
     weight: 1
     region: content

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.flip_card.field_classes
     - field.field.paragraph.flip_card.field_flip_card_back
     - field.field.paragraph.flip_card.field_flip_card_front
     - paragraphs.paragraphs_type.flip_card
@@ -13,6 +14,14 @@ targetEntityType: paragraph
 bundle: flip_card
 mode: default
 content:
+  field_classes:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_flip_card_back:
     type: text_default
     label: hidden
