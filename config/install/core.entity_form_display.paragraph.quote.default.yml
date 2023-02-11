@@ -1,0 +1,43 @@
+uuid: f8272700-e3fe-43a1-a102-a156be717040
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quote.field_cite
+    - field.field.paragraph.quote.field_classes
+    - field.field.paragraph.quote.field_quote
+    - paragraphs.paragraphs_type.quote
+  module:
+    - text
+id: paragraph.quote.default
+targetEntityType: paragraph
+bundle: quote
+mode: default
+content:
+  field_cite:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_classes:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

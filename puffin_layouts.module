@@ -14,6 +14,10 @@ function puffin_layouts_theme($existing, $type, $theme, $path) {
       'template' => 'paragraph--flip-card',
       'base hook' => 'paragraph',
     ],
+    'paragraph__quote' => [
+      'template' => 'paragraph--quote',
+      'base hook' => 'paragraph',
+    ],
   ];
 }
 
