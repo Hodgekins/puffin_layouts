@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.image_5x4_4col.field_classes
     - field.field.paragraph.image_5x4_4col.field_image
+    - field.field.paragraph.image_5x4_4col.field_link
     - paragraphs.paragraphs_type.image_5x4_4col
 id: paragraph.image_5x4_4col.default
 targetEntityType: paragraph
@@ -22,3 +23,4 @@ content:
     region: content
 hidden:
   field_classes: true
+  field_link: true
