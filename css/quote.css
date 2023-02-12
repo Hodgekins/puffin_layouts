@@ -11,7 +11,7 @@
 .quote:before,
 .quote:after {
 	position: absolute;
-	color: #ccc;
+	color: var(--bs-primary);
 	font-size: 8rem;
 	width: 4rem;
 	height: 4rem;
