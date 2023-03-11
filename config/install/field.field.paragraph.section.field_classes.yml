@@ -10,7 +10,7 @@ field_name: field_classes
 entity_type: paragraph
 bundle: section
 label: Classes
-description: ''
+description: 'Use this field to apply classes (separated by spaces) to this element. You can use Bootstrap 5 classes here. See <a href="https://getbootstrap.com/docs/5.0/layout/utilities/">this link</a> for some examples of utility classes.'
 required: false
 translatable: true
 default_value: {  }

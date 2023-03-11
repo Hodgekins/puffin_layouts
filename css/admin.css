@@ -1,0 +1,33 @@
+/* Improve Choose a component box */
+
+.lpb-dialog {
+    min-width: 500px !important;
+}
+
+.lpb-component-list-search-input {
+    display: none;
+}
+
+.lpb-component-list__group--content {
+    gap: 10px;
+}
+
+.lpb-component-list__item {
+    height: 60px;
+    border: 1px solid #dedfe4;
+    border-radius: 2px;
+    display: flex;
+}
+.lpb-component-list__item a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0 0 0 8px;
+}
+
+.lpb-component-list__item img {
+    height: 100%;
+    width: auto;
+    padding: 8px 8px 8px 0;
+    margin: 0;
+    max-width: none;
+}

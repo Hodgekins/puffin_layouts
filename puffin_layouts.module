@@ -34,4 +34,5 @@ function puffin_layouts_theme_registry_alter(&$theme_registry) {
  */
 function puffin_layouts_preprocess_page(&$variables) {
   $variables['#attached']['library'][] = 'puffin/global-styling';
+  $variables['#attached']['library'][] = 'puffin_layouts/admin';
 }

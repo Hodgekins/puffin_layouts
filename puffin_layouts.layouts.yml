@@ -1,5 +1,5 @@
 puffin_layouts_twelvecol_fluid:
-  label: '12col fluid'
+  label: '1 column (100%) - full width'
   category: 'Puffin'
   path: layouts/twelvecol_fluid
   template: twelvecol_fluid
@@ -14,7 +14,7 @@ puffin_layouts_twelvecol_fluid:
     - [c]
 
 puffin_layouts_twelvecol:
-  label: '12col'
+  label: '1 column (100%)'
   category: 'Puffin'
   path: layouts/twelvecol
   template: twelvecol
@@ -29,7 +29,7 @@ puffin_layouts_twelvecol:
     - [c]
 
 puffin_layouts_sixcol_sixcol:
-  label: '6col 6col'
+  label: '2 columns (50% 50%)'
   category: 'Puffin'
   path: layouts/sixcol_sixcol
   template: sixcol-sixcol
@@ -46,7 +46,7 @@ puffin_layouts_sixcol_sixcol:
     - [d, e]
 
 puffin_layouts_eightcol_fourcol:
-  label: '8col 4col'
+  label: '2 columns (66% 33%)'
   category: 'Puffin'
   path: layouts/eightcol_fourcol
   template: eightcol-fourcol
@@ -63,7 +63,7 @@ puffin_layouts_eightcol_fourcol:
     - [d, d, e]
 
 puffin_layouts_fourcol_eightcol:
-  label: '4col 8col'
+  label: '2 columns (33% 66%)'
   category: 'Puffin'
   path: layouts/fourcol_eightcol
   template: fourcol-eightcol
@@ -80,7 +80,7 @@ puffin_layouts_fourcol_eightcol:
     - [d, e, e]
 
 puffin_layouts_fourcol_fourcol_fourcol:
-  label: '4col 4col 4col'
+  label: '3 columns (33% 33% 33%)'
   category: 'Puffin'
   path: layouts/fourcol_fourcol_fourcol
   template: fourcol-fourcol-fourcol
@@ -99,7 +99,7 @@ puffin_layouts_fourcol_fourcol_fourcol:
     - [e, f, g]
 
 puffin_layouts_threecol_threecol_threecol_threecol:
-  label: '3col 3col 3col 3col'
+  label: '4 columns (25% 25% 25% 25%)'
   category: 'Puffin'
   path: layouts/threecol_threecol_threecol_threecol
   template: threecol-threecol-threecol-threecol
