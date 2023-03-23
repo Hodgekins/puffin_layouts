@@ -3,12 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.section.field_background
     - field.field.paragraph.section.field_classes
+    - field.field.paragraph.section.field_vertical_padding
     - paragraphs.paragraphs_type.section
+_core:
+  default_config_hash: bQQJ5ygx3o2vDhwLfzyDVoztfdw0JMHQ9s9k6RE81MA
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
 mode: default
 content: {  }
 hidden:
+  field_background: true
   field_classes: true
+  field_vertical_padding: true

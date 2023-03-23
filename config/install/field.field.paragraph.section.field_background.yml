@@ -1,0 +1,23 @@
+uuid: f6eb6e72-89e4-46d1-8eae-0bdefc33cb1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_background
+field_name: field_background
+entity_type: paragraph
+bundle: section
+label: 'Background colour'
+description: 'Choose the background colour of this section.'
+required: true
+translatable: false
+default_value:
+  -
+    value: white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

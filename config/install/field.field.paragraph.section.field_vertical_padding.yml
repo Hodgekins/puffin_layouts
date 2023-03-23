@@ -1,0 +1,23 @@
+uuid: 4ce6df43-b2c9-4fe0-bb23-c1948816cd3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vertical_padding
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_vertical_padding
+field_name: field_vertical_padding
+entity_type: paragraph
+bundle: section
+label: 'Vertical padding'
+description: 'Choose how much space to place above and below this section.'
+required: true
+translatable: false
+default_value:
+  -
+    value: '4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

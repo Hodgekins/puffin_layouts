@@ -3,13 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.section.field_background
     - field.field.paragraph.section.field_classes
+    - field.field.paragraph.section.field_vertical_padding
     - paragraphs.paragraphs_type.section
+_core:
+  default_config_hash: tbrsP5eSV-EeZ61-b8Jem6oX3lkIL1AdvA5Sjpsfkbs
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
 mode: default
 content:
+  field_background:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_classes:
     type: string_textfield
     weight: 2
@@ -17,6 +27,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_vertical_padding:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
   layout_paragraphs_fields:
     weight: 1
