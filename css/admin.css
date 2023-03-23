@@ -31,3 +31,12 @@
     margin: 0;
     max-width: none;
 }
+
+/* remove padding from admin view */
+.lpb-layout {
+  padding: 0;
+}
+
+.lp-builder {
+  border: 1px dashed blue;
+}

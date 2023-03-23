@@ -3,11 +3,6 @@ admin:
     component:
       css/admin.css: {}
 
-flip-card:
-  css:
-    component:
-      css/flip-card.css: {}
-
 quote:
   css:
     component:
