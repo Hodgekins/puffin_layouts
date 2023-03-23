@@ -22,27 +22,27 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="row">
-      {% if content.first %}
-        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-6', 'col-md-3') }}>
-          {{ content.first }}
+      {% if content.first_3col %}
+        <div {{ region_attributes.first_3col.addClass('layout__region', 'layout__region--first_3col', 'col-6', 'col-md-3') }}>
+          {{ content.first_3col }}
         </div>
       {% endif %}
 
-      {% if content.second %}
-        <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-6',  'col-md-3') }}>
-          {{ content.second }}
+      {% if content.second_3col %}
+        <div {{ region_attributes.second_3col.addClass('layout__region', 'layout__region--second_3col', 'col-6',  'col-md-3') }}>
+          {{ content.second_3col }}
         </div>
       {% endif %}
 
-      {% if content.third %}
-        <div {{ region_attributes.third.addClass('layout__region', 'layout__region--third', 'col-6', 'col-md-3') }}>
-          {{ content.third }}
+      {% if content.third_3col %}
+        <div {{ region_attributes.third_3col.addClass('layout__region', 'layout__region--third_3col', 'col-6', 'col-md-3') }}>
+          {{ content.third_3col }}
         </div>
 
       {% endif %}
-      {% if content.fourth %}
-        <div {{ region_attributes.fourth.addClass('layout__region', 'layout__region--fourth', 'col-6', 'col-md-3') }}>
-          {{ content.fourth }}
+      {% if content.fourth_3col %}
+        <div {{ region_attributes.fourth_3col.addClass('layout__region', 'layout__region--fourth_3col', 'col-6', 'col-md-3') }}>
+          {{ content.fourth_3col }}
         </div>
       {% endif %}
     </div>

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: image_3x1_3col
-label: 'Image 3x1 width 25%'
+label: 'Image 3x1'
 icon_uuid: null
 icon_default: null
 description: ''

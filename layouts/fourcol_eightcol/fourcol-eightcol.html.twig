@@ -22,15 +22,15 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="row">
-      {% if content.first %}
-        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-md-4') }}>
-          {{ content.first }}
+      {% if content.first_4col %}
+        <div {{ region_attributes.first_4col.addClass('layout__region', 'layout__region--first_4col', 'col-md-4') }}>
+          {{ content.first_4col }}
         </div>
       {% endif %}
 
-      {% if content.second %}
-        <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-md-8') }}>
-          {{ content.second }}
+      {% if content.second_8col %}
+        <div {{ region_attributes.second_8col.addClass('layout__region', 'layout__region--second_8col', 'col-md-8') }}>
+          {{ content.second_8col }}
         </div>
       {% endif %}
     </div>

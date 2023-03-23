@@ -4,7 +4,7 @@ puffin_layouts_twelvecol_fluid:
   path: layouts/twelvecol_fluid
   template: twelvecol_fluid
   regions:
-    first:
+    first_100vw:
       label: First
   default_region: first
   library: puffin/bootstrap
@@ -19,7 +19,7 @@ puffin_layouts_twelvecol:
   path: layouts/twelvecol
   template: twelvecol
   regions:
-    first:
+    first_12col:
       label: First
   default_region: first
   library: puffin/bootstrap
@@ -34,9 +34,9 @@ puffin_layouts_sixcol_sixcol:
   path: layouts/sixcol_sixcol
   template: sixcol-sixcol
   regions:
-    first:
+    first_6col:
       label: First
-    second:
+    second_6col:
       label: Second
   default_region: first
   library: puffin/bootstrap
@@ -51,9 +51,9 @@ puffin_layouts_eightcol_fourcol:
   path: layouts/eightcol_fourcol
   template: eightcol-fourcol
   regions:
-    first:
+    first_8col:
       label: First
-    second:
+    second_4col:
       label: Second
   default_region: first
   library: puffin/bootstrap
@@ -68,9 +68,9 @@ puffin_layouts_fourcol_eightcol:
   path: layouts/fourcol_eightcol
   template: fourcol-eightcol
   regions:
-    first:
+    first_4col:
       label: First
-    second:
+    second_8col:
       label: Second
   default_region: first
   library: puffin/bootstrap
@@ -85,11 +85,11 @@ puffin_layouts_fourcol_fourcol_fourcol:
   path: layouts/fourcol_fourcol_fourcol
   template: fourcol-fourcol-fourcol
   regions:
-    first:
+    first_4col:
       label: First
-    second:
+    second_4col:
       label: Second
-    third:
+    third_4col:
       label: Third
   default_region: first
   library: puffin/bootstrap
@@ -104,13 +104,13 @@ puffin_layouts_threecol_threecol_threecol_threecol:
   path: layouts/threecol_threecol_threecol_threecol
   template: threecol-threecol-threecol-threecol
   regions:
-    first:
+    first_3col:
       label: First
-    second:
+    second_3col:
       label: Second
-    third:
+    third_3col:
       label: Third
-    fourth:
+    fourth_3col:
       label: Fourth
   default_region: first
   library: puffin/bootstrap

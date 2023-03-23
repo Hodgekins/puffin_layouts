@@ -1,0 +1,5 @@
+services:
+  puffin_layouts.event_subscriber:
+    class: Drupal\puffin_layouts\EventSubscriber\PuffinLayoutsAllowedTypesSubscriber
+    tags:
+      - { name: event_subscriber }

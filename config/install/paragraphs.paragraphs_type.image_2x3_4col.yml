@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: image_2x3_4col
-label: 'Image 2x3 width 33%'
+label: 'Image 2x3'
 icon_uuid: null
 icon_default: null
 description: ''

@@ -22,9 +22,9 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="row">
-      {% if content.first %}
-        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col') }}>
-          {{ content.first }}
+     {% if content.first_100vw %}
+        <div {{ region_attributes.first_100vw.addClass('layout__region', 'layout__region--first_100vw', 'col') }}>
+          {{ content.first_100vw }}
         </div>
       {% endif %}
     </div>
