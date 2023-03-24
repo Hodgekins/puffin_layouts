@@ -41,6 +41,14 @@
 
 {% set custom_classes = paragraph.field_classes.value ? paragraph.field_classes.value|split(" ") : [] %}
 
+{% if paragraph.field_background %}
+  {% set custom_classes = custom_classes|merge(["bg-" ~ paragraph.field_background.value]) %}
+{% endif %}
+
+{% if paragraph.field_vertical_padding %}
+  {% set custom_classes = custom_classes|merge(["py-" ~ paragraph.field_vertical_padding.value]) %}
+{% endif %}
+
 {%
   set classes = [
     'paragraph',
