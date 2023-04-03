@@ -31,16 +31,26 @@ class PuffinLayoutsAllowedTypesSubscriber implements EventSubscriberInterface {
 
     if (!$event->getRegion()) return;
 
-    //Some paragraph types
     $types = $event->getTypes();
 
-    preg_match("/\dcol\b/", $event->getRegion(), $matches);
-    if (count($matches) == 0) return;
-    $column_count = $matches[0];
-
+    //Paragraph types can have [int]col or [int]vw at the end of the name.
+    //Regions can also have [int]col or [int]vw at the end of the name.
+    //If a region uses this naming convention, paragraph types that also use the
+    //convention MUST MATCH suffixes, otherwise they are unset.
     foreach($types as $key => $type) {
-      if (strpos($key, 'col') && !strpos($key, $column_count)) unset($types[$key]);
+
+      preg_match("/\d+col\b/", $event->getRegion(), $cols);
+      if (count($cols) > 0) {
+        if (strpos($key, 'col') && !strpos($key, $cols[0])) unset($types[$key]);
+        if (strpos($key, 'vw')) unset($types[$key]);
+      }
+      preg_match("/\d+vw\b/", $event->getRegion(), $vw);
+      if (count($vw) > 0) {
+        if (strpos($key, 'vw') && !strpos($key, $vw[0])) unset($types[$key]);
+        if (strpos($key, 'col')) unset($types[$key]);
+      }
     }
+
     $event->setTypes($types);
   }
 
