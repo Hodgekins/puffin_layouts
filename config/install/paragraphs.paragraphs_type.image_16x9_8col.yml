@@ -1,10 +1,17 @@
 uuid: 0575d30a-60e0-4467-85c2-dc49cc3b7ce1
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: 4LK18luDCCjffBAl1I4V4I2-QcM4TPu3wU8gOaKfJAg
 id: image_16x9_8col
 label: 'Image 16x9'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

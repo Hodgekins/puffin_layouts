@@ -1,10 +1,17 @@
 uuid: 5f7ef1ed-345a-4932-ab16-42e5f5025bac
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: efLVv7MrEgjzynGC3RAuF0orPxGCV9APvJKbfp2l2Yk
 id: body
 label: Body
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

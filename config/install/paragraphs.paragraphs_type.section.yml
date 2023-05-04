@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - layout_paragraphs
+_core:
+  default_config_hash: qYBztMAPcmyYg_jyIFfUwuTor_PJ8No09GL2laaVmTU
 id: section
 label: Section
 icon_uuid: null
@@ -15,8 +17,10 @@ behavior_plugins:
     available_layouts:
       puffin_layouts_twelvecol_fluid: '1 column (100%) - full width'
       puffin_layouts_twelvecol: '1 column (100%)'
+      puffin_layouts_eightcol_centered: '1 column (66%) centered'
       puffin_layouts_sixcol_sixcol: '2 columns (50% 50%)'
       puffin_layouts_eightcol_fourcol: '2 columns (66% 33%)'
       puffin_layouts_fourcol_eightcol: '2 columns (33% 66%)'
       puffin_layouts_fourcol_fourcol_fourcol: '3 columns (33% 33% 33%)'
+      puffin_layouts_threecol_threecol_threecol_centered: '3 columns (25% 25% 25%) centered'
       puffin_layouts_threecol_threecol_threecol_threecol: '4 columns (25% 25% 25% 25%)'

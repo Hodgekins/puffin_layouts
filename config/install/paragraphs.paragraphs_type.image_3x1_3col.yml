@@ -1,10 +1,17 @@
 uuid: 2ff06ebe-119f-487a-b959-d935c1007f91
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: 9W4t2euAXH-9zhy9iHy1xXjdrfIeyAeWYVvUtrBd8Aw
 id: image_3x1_3col
 label: 'Image 3x1'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

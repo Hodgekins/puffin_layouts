@@ -1,10 +1,17 @@
 uuid: 615bb6d6-6fb0-4c3b-b943-840f5e1db859
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: dGsDE0BvMVo7gggXjH-dF3ILI4flTYN5HuiDfksxEGY
 id: image_5x4_4col
 label: 'Image 5x4'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

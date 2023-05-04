@@ -1,10 +1,17 @@
 uuid: 133df83d-d548-4581-a0dd-54d71fb4dfef
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: DX70W64BRxdnLgtxrThJEIRHFVe7u7eGB0tpyN_-m70
 id: image_2x3_4col
 label: 'Image 2x3'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
