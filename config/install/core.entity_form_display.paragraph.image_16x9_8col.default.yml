@@ -10,7 +10,8 @@ dependencies:
   module:
     - link
     - media_library
-    - media_library_edit
+_core:
+  default_config_hash: I4Y06s7ozScjswYfa2RKpNufHG0gaWf8tOZbn14Jdgk
 id: paragraph.image_16x9_8col.default
 targetEntityType: paragraph
 bundle: image_16x9_8col
@@ -30,9 +31,7 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings:
-      media_library_edit:
-        show_edit: '1'
+    third_party_settings: {  }
   field_link:
     type: link_default
     weight: 2

@@ -1,8 +1,3 @@
-admin:
-  css:
-    component:
-      css/admin.css: {}
-
 quote:
   css:
     component:

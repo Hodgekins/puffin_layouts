@@ -28,6 +28,21 @@ puffin_layouts_twelvecol:
     - [b]
     - [c]
 
+puffin_layouts_eightcol_centered:
+  label: '1 column (66%) centered'
+  category: 'Puffin'
+  path: layouts/eightcol_centered
+  template: eightcol-centered
+  regions:
+    first_8col:
+      label: First
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [b, c, c, c, c, d]
+    - [e, f, f, f, f, g]
+
 puffin_layouts_sixcol_sixcol:
   label: '2 columns (50% 50%)'
   category: 'Puffin'
@@ -97,6 +112,25 @@ puffin_layouts_fourcol_fourcol_fourcol:
     - [a]
     - [b, c, d]
     - [e, f, g]
+
+puffin_layouts_threecol_threecol_threecol_centered:
+  label: '3 columns (25% 25% 25%) centered'
+  category: 'Puffin'
+  path: layouts/threecol_threecol_threecol_centered
+  template: threecol-threecol-threecol-centered
+  regions:
+    first_3col:
+      label: First
+    second_3col:
+      label: Second
+    third_3col:
+      label: Third
+  default_region: first
+  library: puffin/bootstrap
+  icon_map:
+    - [a]
+    - [c, c, d, d, d, e, e, e, f, f, f, g, g]
+    - [h, h, i, i, i, j, j, j, k, k, k, l, l]
 
 puffin_layouts_threecol_threecol_threecol_threecol:
   label: '4 columns (25% 25% 25% 25%)'

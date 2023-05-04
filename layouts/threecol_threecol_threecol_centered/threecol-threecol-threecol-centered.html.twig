@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display 6col 6col layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout wrapper.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'layout',
+    'layout--threecol-threecol-threecol-centered',
+    'container',
+  ]
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="row justify-content-center">
+      {% if content.first_3col %}
+        <div {{ region_attributes.first_3col.addClass('layout__region', 'layout__region--first_3col', 'col-md-3') }}>
+          {{ content.first_3col }}
+        </div>
+      {% endif %}
+
+      {% if content.second_3col %}
+        <div {{ region_attributes.second_3col.addClass('layout__region', 'layout__region--second_3col',  'col-md-3') }}>
+          {{ content.second_3col }}
+        </div>
+      {% endif %}
+
+      {% if content.third_3col %}
+        <div {{ region_attributes.third_3col.addClass('layout__region', 'layout__region--third_3col', 'col-md-3') }}>
+          {{ content.third_3col }}
+        </div>
+
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+

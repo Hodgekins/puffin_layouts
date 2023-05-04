@@ -14,17 +14,17 @@
 {%
   set classes = [
     'layout',
-    'layout--twelvecol-fluid',
-    'container-fluid',
+    'layout--eightcol-centered',
+    'container',
   ]
 %}
 
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="row">
-     {% if content.first_100vw %}
-        <div {{ region_attributes.first_100vw.addClass('layout__region', 'layout__region--first_100vw', 'col') }}>
-          {{ content.first_100vw }}
+      {% if content.first_8col %}
+        <div {{ region_attributes.first_8col.addClass('layout__region', 'layout__region--first_8col', 'col-md-8', 'mx-auto') }}>
+          {{ content.first_8col }}
         </div>
       {% endif %}
     </div>

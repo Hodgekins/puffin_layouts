@@ -1,5 +1,7 @@
 <?php
 
+use \Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Primary module hooks for Puffin Layouts module.
@@ -14,6 +16,10 @@ function puffin_layouts_theme($existing, $type, $theme, $path) {
       'template' => 'paragraph--quote',
       'base hook' => 'paragraph',
     ],
+    'paragraph__hero_100vw' => [
+      'template' => 'paragraph--hero-100vw',
+      'base hook' => 'paragraph',
+    ],
   ];
 }
 
@@ -25,10 +31,10 @@ function puffin_layouts_theme_registry_alter(&$theme_registry) {
   $theme_registry['paragraph']['path'] = \Drupal::service('extension.list.module')->getPath('puffin_layouts') . '/templates';
 }
 
-/**
- * Implements hook_preprocess_page()
- */
-function puffin_layouts_preprocess_page(&$variables) {
-  $variables['#attached']['library'][] = 'puffin/global-styling';
-  $variables['#attached']['library'][] = 'puffin_layouts/admin';
+function puffin_layouts_form_views_form_media_library_widget_image_alter(array &$form, FormStateInterface $form_state) {
+
+  //Add classes to media library form
+  $form['#attributes']['class'][] = 'd-flex';
+  $form['#attributes']['class'][] = 'flex-wrap';
+  $form['#attributes']['class'][] = 'gap-2';
 }
