@@ -6,18 +6,6 @@
  */
 
 /**
- * Implements hook_theme().
- */
-function puffin_layouts_theme($existing, $type, $theme, $path) {
-  return [
-    'paragraph__quote' => [
-      'template' => 'paragraph--quote',
-      'base hook' => 'paragraph',
-    ],
-  ];
-}
-
-/**
  * Implement hook_theme_registry_alter()
  */
 function puffin_layouts_theme_registry_alter(&$theme_registry) {
