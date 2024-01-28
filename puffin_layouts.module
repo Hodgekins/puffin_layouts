@@ -14,10 +14,6 @@ function puffin_layouts_theme($existing, $type, $theme, $path) {
       'template' => 'paragraph--quote',
       'base hook' => 'paragraph',
     ],
-    'paragraph__hero_100vw' => [
-      'template' => 'paragraph--hero-100vw',
-      'base hook' => 'paragraph',
-    ],
   ];
 }
 
