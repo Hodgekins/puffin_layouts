@@ -1,11 +1,15 @@
 {% set custom_classes = paragraph.field_classes.value ? paragraph.field_classes.value|split(" ") : [] %}
 
 {% if paragraph.field_background %}
-  {% set custom_classes = custom_classes|merge(["bg-" ~ paragraph.field_background.value]) %}
+	{% set custom_classes = custom_classes|merge(["bg-" ~ paragraph.field_background.value]) %}
 {% endif %}
 
 {% if paragraph.field_vertical_padding %}
-  {% set custom_classes = custom_classes|merge(["py-" ~ paragraph.field_vertical_padding.value]) %}
+	{% set custom_classes = custom_classes|merge(["py-" ~ paragraph.field_vertical_padding.value]) %}
+{% endif %}
+
+{% if paragraph.field_link is not empty %}
+	{% set link = paragraph.field_link.get(0).getUrl().toString() %}
 {% endif %}
 
 {%
@@ -18,9 +22,11 @@
 %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
+	{% if link %}<a href="{{ link }}">{% endif %}
+		<div{{attributes.addClass(classes)}}>
+			{% block content %}
+				{{ content }}
+			{% endblock %}
+		</div>
+	{% if link %}</a>{% endif %}
 {% endblock paragraph %}
